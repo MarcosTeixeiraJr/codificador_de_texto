@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Decodificador e Codificador</title>
+</head>
+<body>
+    <header>
+        <h1>Codificador</h1>
+    </header>
+    <main>
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto" aria-label="Digite seu texto"></textarea>
+            </div>
+        </div>
+
+        <div id="output">
+            <img src="image/cadeado.png" alt="Imagem de um cadeado">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <span>Digite um texto que você deseja criptografar ou descriptografar</span>
+        </div>
+        
+        <div class="atention">
+            <img src="image/bi_exclamation.png" alt="Ícone de exclamação">
+            <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+
+        <div class="buttons">
+            <div class="container-btn">
+                <button onclick="criptografar()" class="btn-criptografar" aria-label="Botão para criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar" aria-label="Botão para descriptografar">Descriptografar</button>
+            </div>
+        </div>    
+    </main>
+    <footer class="rodape">
+        <div>
+            <p>&copy; 2024 Decodificador de Texto Desenvolvido por Marcos Teixeira</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

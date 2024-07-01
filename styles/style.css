@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-background: #176585;
+    --cor-primaria: #27b1bf;
+    --cor-secundaria: #36cecc;
+    --cor-terciaria: #c2e4cb;
+    --cor-quaternaria: #f7f3cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin-left: 4%;
+    color: var(--cor-primaria);
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+    width: 400px;
+    height: 300px;
+}
+
+#input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+    margin-left: 4%;
+    resize: none;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+    margin-right: 3%;
+    margin-left: auto;
+}
+
+#output textarea {
+    width: 90%;
+    height: 80%;
+    font-size: 20px;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+    resize: none;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-primaria);
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+    color: var(--cor-terciaria);
+}
+
+#output img {
+    max-width: 350px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.atention {
+    display: flex;
+    align-items: center;
+    color: var(--cor-terciaria);
+}
+
+.atention img {
+    margin-left: 4%;
+    margin-right: 10px;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: left;
+    margin-left: 4%;
+    margin-right: 10px;
+}
+
+.container-btn button {
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    color: var(--cor-primaria);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+.container-btn button:last-child {
+    margin-right: 0; /* Remove a margem do último botão para evitar espaço extra */
+}
+
+.container-btn button:focus {
+    border: 2px solid var(--cor-secundaria);
+    outline: none;
+}
+
+.container-btn button:hover {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.btn-copiar {
+    margin-top: 10px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    color: var(--cor-primaria);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-copiar:focus {
+    border: 2px solid var(--cor-secundaria);
+    outline: none;
+}
+
+.btn-copiar:hover {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background-color: var(--cor-secundaria);
+}
+
+.rodape p {
+    color: var(--cor-quaternaria);
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2%;
+        margin-left: 0;
+    }
+
+    .container-input {
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .container-input .input {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #input-texto {
+        width: 90%;
+        height: auto;
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    #output {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #output textarea {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .atention {
+        position: fixed;
+        bottom: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--cor-background);
+        padding: 10px 0;
+    }
+
+    .container-btn {
+        position: fixed;
+        bottom: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--cor-background);
+    }
+
+    .container-btn button {
+        margin: 10px 0;  
+    }
+
+    .btn-copiar {
+        margin-top: 10px;
+    }
+
+    .rodape {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+}
