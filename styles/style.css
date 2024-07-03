@@ -194,68 +194,50 @@ header {
     font-size: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2%;
-        margin-left: 0;
+        padding: 10px;
     }
 
     .container {
-        margin-left: 0;
-    }
-
-    #input-texto {
-        width: 90%;
-        height: auto;
-        font-size: 18px;
-        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     #output {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #output textarea {
-        font-size: 18px;
+    #output img {
+        width: 80%;
+        max-width: 200px;
     }
 
     .atention {
-        position: fixed;
-        bottom: 120px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: var(--cor-background);
-        padding: 10px 0;
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .container-btn {
-        position: fixed;
-        bottom: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        background-color: var(--cor-background);
-    }
-
-    .container-btn button {
-        margin: 10px 0;  
+        position: static;
+        margin-bottom: 20px;
+        gap: 20px;
     }
 
     .btn-copiar {
+        width: 100%;
         margin-top: 10px;
     }
 
     .rodape {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin-top: 0;
+        position: static;
+        margin-top: 20px;
     }
 }
+
+
