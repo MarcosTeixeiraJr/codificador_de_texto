@@ -27,6 +27,20 @@ header {
     color: var(--cor-primaria);
 }
 
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.container #output {
+    display: flex;
+    width: 50%;
+}
+
+.container .container-input{
+    width: 50%;
+}
+
 .container-input {
     display: flex;
     justify-content: space-between;
@@ -211,7 +225,7 @@ header {
     #output {
         width: 100%;
         height: auto;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     #output textarea {

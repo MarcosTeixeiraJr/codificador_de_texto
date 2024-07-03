@@ -11,16 +11,17 @@
         <h1>Codificador</h1>
     </header>
     <main>
-        <div class="container-input">
-            <div class="input">
-                <textarea id="input-texto" placeholder="Digite seu texto" aria-label="Digite seu texto"></textarea>
+        <div class="container">
+            <div class="container-input">
+                <div class="input">
+                    <textarea id="input-texto" placeholder="Digite seu texto" aria-label="Digite seu texto"></textarea>
+                </div>
             </div>
-        </div>
-
-        <div id="output">
-            <img src="image/cadeado.png" alt="Imagem de um cadeado">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <span>Digite um texto que você deseja criptografar ou descriptografar</span>
+            <div id="output">
+                <img src="image/cadeado.png" alt="Imagem de um cadeado">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <span>Digite um texto que você deseja criptografar ou descriptografar</span>
+            </div>
         </div>
         
         <div class="atention">
@@ -30,8 +31,8 @@
 
         <div class="buttons">
             <div class="container-btn">
-                <button onclick="criptografar()" class="btn-criptografar" aria-label="Botão para criptografar">Criptografar</button>
-                <button onclick="descriptografar()" class="btn-descriptografar" aria-label="Botão para descriptografar">Descriptografar</button>
+                <button class="btn-criptografar" aria-label="Botão para criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn-descriptografar" aria-label="Botão para descriptografar" onclick="descriptografar()">Descriptografar</button>
             </div>
         </div>    
     </main>
