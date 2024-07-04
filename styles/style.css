@@ -194,42 +194,40 @@ header {
     font-size: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     header {
         padding: 10px;
         justify-content: center;
+        margin-left: 0; /* Removendo margem lateral em telas menores */
     }
 
     .container {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        
+        align-items: center; /* Centralizando conteúdo */
     }
 
-    .container-input{
-        width: auto;
+    .container-input {
+        width: 90%; /* Ajustando largura para melhor responsividade */
+        padding: 2%; /* Ajustando padding */
     }
 
     .container #output {
-        width: auto;
-        margin: 10px;
-        justify-items: center;
-    
-    }
-
-    #output img {
-       max-width: 400px;
+        width: 90%; /* Ajustando largura para melhor responsividade */
+        margin: 20px auto; /* Centralizando e adicionando espaçamento vertical */
     }
 
     .atention {
-       justify-content: center;
-       margin-bottom: 20px;
-       margin-top: 20px;
+        justify-content: center;
+        margin: 20px 0; /* Ajustando margens verticalmente */
     }
 
     .container-btn {
-       justify-content: center;
+        justify-content: center;
+        margin: 20px 0; /* Ajustando margens verticalmente */
+    }
+
+    .rodape {
+        width: 100%; /* Garantindo que a rodape ocupe toda a largura */
     }
 }
 
