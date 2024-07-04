@@ -197,50 +197,39 @@ header {
 @media (max-width: 1200px) {
     header {
         padding: 10px;
+        justify-content: center;
     }
 
     .container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        
     }
 
-    #output {
-        width: 90%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
+    .container-input{
+        width: auto;
+    }
+
+    .container #output {
+        width: auto;
+        margin: 10px;
+        justify-items: center;
+    
     }
 
     #output img {
-        position: static;
-        margin: 20px 0;
-        width: 80%;
-        max-width: 200px;
-        align-items: center;
+       max-width: 400px;
     }
 
     .atention {
-        position: static;
-        margin-bottom: 20px;
-        text-align: center;
+       justify-content: center;
+       margin-bottom: 20px;
+       margin-top: 20px;
     }
 
     .container-btn {
-        position: static;
-        margin-bottom: 20px;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .btn-copiar {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .rodape {
-        position: static;
-        margin-top: 20px;
+       justify-content: center;
     }
 }
 
